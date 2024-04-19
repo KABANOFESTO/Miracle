@@ -1,38 +1,37 @@
-.App {
-  text-align: center;
+:root {
+  --bgcolor: #fff;
+  --heading: #010100;
+  --paragraph: #cfcece;
+  --yellow: #ffd369;
+  --gray: #f9f8fa;
+  --darkblack: #222930;
+  --radius: 8px;
+  --puple: hsla(317, 88%, 67%, 0.8);
+  --yello_g: hsla(33, 95%, 70%, 0.8);
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  padding: 0 6%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* ==================== Home Blog section ============= */
+.blog-section {
+  padding-top: 60px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* ======================== Article Blog Section =============== */
+.Articles-section {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+.Loader {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 100px;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0 4%;
   }
-  to {
-    transform: rotate(360deg);
+  .blog-section {
+    padding-top: 30px;
   }
 }
