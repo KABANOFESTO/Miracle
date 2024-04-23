@@ -21,7 +21,6 @@ function App() {
           <Route path="login" element={<Login />} />
           <Route path="blogs" element={<Blogs />} />
           <Route path="signup" element={<Signup />} />
-
           <Route path="blogSingle/:id" element={<BlogSingle />} />
           <Route path="*" element={<Notfound />} />
         </Route>

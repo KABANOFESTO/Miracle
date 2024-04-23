@@ -41,53 +41,7 @@ const ArticleBlog = ({ Id, title, image, desc, data, profile,fullname, views, li
     };
     return new Date(dateString).toLocaleDateString(undefined, options);
   };
-//   const [likeCount, setLikeCount] = useState(likes);
-//   const [liked, setLiked] = useState(false); // State to track whether the post is liked
-  
-//   const iconColor = liked ? 'red' : 'black'; // Determine the color based on liked state
 
-
-// const handleLike = async (ID) => {
-//   setLiked(true)
-//   const token = localStorage.getItem("token");
-
-//   if (!token) {
-//       errors(); 
-//   } else {
-//       try {
-//           const response = await axios.post(
-//               `https://blogbeckend.onrender.com/PostgreSQL/API/posts/like/${ID}`, // Dynamically include postId in the URL
-//               {},
-//               {
-//                   headers: {
-//                       authorization: `Bearer ${token}`,
-//                   },
-//               }
-//           );
-
-//           if (response.status === 200 || response.status === 201) {
-              
-//             if(response.data.message=='Your like removed'){
-//               if(likeCount!=0){
-//                 setLikeCount(prevCount => prevCount -1);
-//                 setLiked(false)
-//               }
-              
-//             }
-//             if(response.data.message=='Your like added'){
-//                 setLikeCount(prevCount => parseInt(prevCount) + 1);
-//                 setLiked(true)
-              
-//             }
-//           } else {
-//               console.log('Failed to like post');
-         
-//           }
-//       } catch (error) {
-//           console.error("An error occurred while liking post:", error);
-//       }
-//   }
-// };
 const [likeCount, setLikeCount] = useState(likes);
 const [likedPosts, setLikedPosts] = useState({}); // Object to track liked posts
 
@@ -247,7 +201,7 @@ const isVideo = (url) => {
           </div>
         </div>
       </div>
-     
+      
     </>
   );
 };
